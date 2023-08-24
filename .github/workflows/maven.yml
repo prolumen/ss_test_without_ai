@@ -30,7 +30,7 @@ jobs:
       - name: Build with Maven
         run: mvn test --file pom.xml
       - name: Run Sonar
-        run: mvn sonar:sonar -Pcoverage
+        run: mvn sonar:sonar -Dsonar.login=prolumen_ss_test_without_ai
 
   build:
 
